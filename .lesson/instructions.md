@@ -25,4 +25,34 @@ The following table shows the basic data types in Python, many of which may be f
 | Name | Type | Examples |
 |------|------|----------|
 | Boolean | `bool` | `True`, `False`|
-| 
+| Integer | `int` | `48`, `200` |
+| Floating point | `float` | `3.14`, `3.7e3`|
+| Complex |`complex`| `3j`, `5+9j`|
+| Text string |`str`| `Hello`, `Goodbye`|
+| List |`list`| `['spring', 'summer', 'fall', 'winter']`|
+| Tuple |`tuple`|`(2,4,8)`|
+| Bytes |`bytes`|`b'ab\xff`|
+| ByteArray | `bytearray`|`bytearray(...)`|
+| Set | `set` | `set([3,5,7])`|
+| Frozen set | `frozenset`| `frozenset(['Anne', 'Bertie'])`|
+| Dictionary | `dict` | `{'Yaris':'Toyota', 'S':'Tesla'}`|
+
+We will work with most of them over the following chapters.
+
+Python is a _strongly typed_ language, which means that the type of an object does not change. A separate property is _mutability_, which is the capacity of the data _value_ contained in an object to change. Think of a mutable object as a box with a lid whose value can be replaced.
+
+## Literal and variables
+Some computer science parlance: 
+- a literal is notation for representing a fixed value, such as `42`
+- a variable is storage location associated with a symbolic name ("pointed to"), such as `x`
+
+In this example:
+```Python
+x = 42
+^   ^
+|   |--- literal
+|------- variable
+```
+
+## Variables
+
