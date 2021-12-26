@@ -88,7 +88,23 @@ print(b)
 
 ![Copying a name is equivalent to tagging and object twice](variables_as_names.draw)
 
-This can lead to a surprising behavior in case the objects are mutable:
+This can lead to a surprising behavior in case the objects are mutable. This behavior is easy to follow:
+```Python
+x = 1
+print(x)
+y = x
+print(y)
+x = 10
+print(x)
+print(y)
+```
+... but this one may come up as a surprise:
+```Python
+a = [1, 2]
+b = a
+a[0] = 9
+print(b)
+```
 
 ## Checking the type
 In order to check the type of a variable we may use the functions `type()` and `isinstance()`:
