@@ -55,4 +55,50 @@ x = 42
 ```
 
 ## Variables
+Python let's you define variables and give them names that must comply with certain conditions:
+- they can only contain letters, digits, and underscore
+- they are case-sensitive
+- they must not begin with a digit
+- names that begin with an underscore are treated specially (we will come back on this later on)
+- they cannot be one of Python's reserved words or _keywords_, with can be looked up with the following command:
+
+```Python
+help('keywords')
+```
+
+## Assignment
+In Python, assignment is achieved with the `=` operator, instead of the operator `<-` that is used in, e.g. R. The "equal to" operator is `==`, so make sure you do not confuse them.
+
+The assignment operator is quite intuitive:
+```Python
+x = 4
+y = x * 3
+print(y)
+```
+
+## Variables as names
+An important nuance in Python is that variables are just names that we use to "tag" the object boxes we described. In other words, they are just a reference to the object, not the object itself. The main implication of this is that you may have two variables pointing to the same object:
+
+```Python
+a = 10
+print(a)
+b = a
+print(b)
+```
+
+![Copying a name is equivalent to tagging and object twice](variables_as_names.draw)
+
+This can lead to a surprising behavior in case the objects are mutable:
+
+## Checking the type
+In order to check the type of a variable we may use the functions `type()` and `isinstance()`:
+
+```Python
+type(10)
+isinstance(10, int)
+type('Hello')
+type(True)
+type(5.0)
+type(2+4.0)
+```
 
